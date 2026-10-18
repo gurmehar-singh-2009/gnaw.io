@@ -10,4 +10,12 @@ pub enum ApplicationError {
     ChaChaCipherEstablishError {
         source: chacha20poly1305::aead::common::InvalidLength,
     },
+
+    #[snafu(display("Failed to setup WebTransport server."))]
+    WTransportServerInitFail { source: std::io::Error },
+
+    #[snafu(display("Failed to accept faulty session request."))]
+    WTransportFaultySessionReq {
+        source: wtransport::error::ConnectionError,
+    },
 }

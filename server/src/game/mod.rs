@@ -1,2 +1,3 @@
+mod entity;
 mod game_state;
-mod network_manager;
+mod network;

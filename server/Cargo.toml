@@ -14,3 +14,5 @@ libcrux-ml-kem = { workspace = true }
 nanorand = { workspace = true }
 getrandom = "0.4.3"
 snafu = { workspace = true }
+wtransport = "0.7.2"
+tokio = { version = "1.53.3", features = ["full"] }
