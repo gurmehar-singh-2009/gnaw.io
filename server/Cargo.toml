@@ -4,3 +4,13 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+bytes = { workspace = true }
+hkdf = { workspace = true }
+sha2 = { workspace = true }
+x25519-dalek = { workspace = true }
+ed25519-dalek = { workspace = true }
+chacha20poly1305 = { workspace = true }
+libcrux-ml-kem = { workspace = true }
+nanorand = { workspace = true }
+getrandom = "0.4.3"
+snafu = { workspace = true }
